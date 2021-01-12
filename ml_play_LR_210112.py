@@ -1,6 +1,6 @@
 """
 The template of the script for the machine learning process in game pingpong
-python MLGame.py -i ml_play_LR_1P.py -i ml_play_SVM_2P.py pingpong EASY
+python MLGame.py -i ml_play_LR_210112.py -i ml_play_LR_210112.py pingpong EASY
 """
 
 
