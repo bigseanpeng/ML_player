@@ -23,6 +23,7 @@ class MLPlay:
         import pickle
         import numpy as np
         if scene_info["status"] != "GAME_ALIVE":
+            print(scene_info["ball_speed"])
             return "RESET"
         
         if abs(scene_info["ball_speed"][0]) != abs(scene_info["ball_speed"][1]):#偵測到切球，則切換成NORNAL模式
