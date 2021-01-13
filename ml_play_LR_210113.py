@@ -5,6 +5,8 @@ python MLGame.py -i ml_play_LR_210112.py -i ml_play_LR_210112.py pingpong EASY
 
 
 import random
+import pickle
+import numpy as np
 class MLPlay:
     def __init__(self, side):
         """
@@ -32,8 +34,6 @@ class MLPlay:
         """
         Generate the command according to the received scene information
         """
-        import pickle
-        import numpy as np
         if scene_info["status"] != "GAME_ALIVE":
             print(scene_info["ball_speed"])
             return "RESET"
@@ -153,4 +153,6 @@ class MLPlay:
         else:
             self.ball_served = True
             return serve_to
+
+
 
